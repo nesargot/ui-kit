@@ -133,8 +133,8 @@
       #layouts #chats-layout #chats-list .item .labels .name {
         color: #070507;
         font-weight: 500;
-        font-size: 14px;
-        margin-bottom: 7px; }
+        font-size: 16px;
+        margin-bottom: 5px; }
       #layouts #chats-layout #chats-list .item .labels .message {
         color: #807f82;
         font-weight: 400; }
@@ -152,14 +152,15 @@
         height: 10px; }
       #layouts #chats-layout #chats-list .item .status .count {
         margin-top: 7px;
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         box-sizing: border-box;
         text-align: center;
-        padding-top: 4px;
+        padding-top: 6px;
         background: #efefef;
         font-weight: 500;
-        border-radius: 10px; }
+        border-radius: 50px;
+        font-size: 13px; }
 
 #main-container {
   width: 100%;
