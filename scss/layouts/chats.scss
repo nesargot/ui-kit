@@ -66,6 +66,8 @@ $padding: 18px;
                 display: flex;
                 align-items: center;
 
+                user-select: none;
+
                 .avatar {
                     width: 55px; height: 55px;
                     position: relative;
@@ -107,7 +109,7 @@ $padding: 18px;
                     .name {
                         color: #070507;
                         font-weight: 500;
-                        font-size: 16px;
+                        font-size: 15px;
                         margin-bottom: 5px;
                     }
 

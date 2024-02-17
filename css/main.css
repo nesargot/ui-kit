@@ -98,7 +98,8 @@
     padding: 8px 18px;
     overflow: hidden;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    user-select: none; }
     #layouts #chats-layout #chats-list .item .avatar {
       width: 55px;
       height: 55px;
@@ -133,7 +134,7 @@
       #layouts #chats-layout #chats-list .item .labels .name {
         color: #070507;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 15px;
         margin-bottom: 5px; }
       #layouts #chats-layout #chats-list .item .labels .message {
         color: #807f82;
