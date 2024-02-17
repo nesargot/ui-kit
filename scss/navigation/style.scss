@@ -31,14 +31,25 @@ $menu-height: 65px;
             @include flexible();
             color: #75777D;
 
-            width: 28px;
-            height: 28px;
+            width: 28px; height: 28px;
+            position: relative;
 
             img {
                 width: 24px;
                 height: 24px;
 
                 border-radius: 50px;
+            }
+
+            .status {
+                @include flexible();
+                width: 14px; height: 14px;
+
+                position: absolute;
+                top: 16px; left: 15px;
+
+                border-radius: 50px;
+                background-color: #ffffff;
             }
         }
 
@@ -60,5 +71,17 @@ $menu-height: 65px;
 
 #layouts {
     width: 100%;
+    overflow-x: hidden;
+
+    .layout {
+        width: 100%;
+        min-height: 100px;
+
+        display: none;
+
+        &.active {
+            display: block !important;
+        }
+    }
 }
 

@@ -15,10 +15,93 @@
 <body>
     <div id="main-container">
         <div id="layouts">
-            <div class="layout"></div>
+            <div id="chats-layout" class="layout active">
+                <div class="up-bar">
+                    <div class="title">Сообщения</div>
+                    <div class="search">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24">
+                                <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <div class="label">Поиск</div>
+                    </div>
+                </div>
+                <div id="chats-list">
+                    <!-- <div class="item">
+                        <div class="avatar">
+                            <img src="" alt="">
+                            <div class="status"></div>
+                        </div>
+                        <div class="labels">
+                            <div class="name"></div>
+                            <div class="message"></div>
+                        </div>
+                        <div class="status">
+                            <div class="time"></div>
+                            <div class="count"></div>
+                        </div>
+                    </div> -->
+                    <div class="item">
+                        <div class="avatar">
+                            <img src="../../imgs/img2.jpg" alt="">
+                            <div class="status">
+                                <svg width="11px" height="11px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.01822 7.99401C0.415224 8.00001 -0.0727757 8.51001 0.0102243 9.10701C0.242224 10.769 0.996225 12.374 2.27322 13.66C5.40323 16.78 10.4632 16.78 13.5932 13.66C16.7132 10.53 16.7132 5.47001 13.5932 2.34001C12.3082 1.06301 10.7022 0.308007 9.04023 0.077007C8.44422 -0.00699298 7.93423 0.481007 7.92823 1.08401C7.91123 2.84901 7.22823 4.60501 5.88423 5.95001C4.54023 7.29401 2.78322 7.97701 1.01822 7.99401Z" fill="#FCC419"></path>
+                                </svg>                                                                                                        
+                            </div>
+                        </div>
+                        <div class="labels">
+                            <div class="name">Краснов Александр</div>
+                            <div class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, minima! Unde minima magnam corporis temporibus.</div>
+                        </div>
+                        <div class="status">
+                            <div class="time">16:43</div>
+                            <div class="count">3</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="avatar">
+                            <img src="../../imgs/img3.jpg" alt="#">
+                            <div class="status">
+                                <svg width="11px" height="11px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5229 4.47715 20 10 20C15.5229 20 20 15.5229 20 10C20 4.47715 15.5229 0 10 0Z" fill="#1FB141"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="labels">
+                            <div class="name">Чичерина Вика</div>
+                            <div class="message">Lorem ipsum dolor sit amet.</div>
+                        </div>
+                        <div class="status">
+                            <div class="time">12:01</div>
+                            <!-- <div class="count">3</div> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="avatar">
+                            <img src="../../imgs/img4.jpg" alt="">
+                            <div class="status">
+                                <svg width="13px" height="13px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#D9D9D9"></circle>
+                                    <circle cx="10" cy="10" r="4" fill="white"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="labels">
+                            <div class="name">Смирнова Юлия</div>
+                            <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae aspernatur et non quibusdam illum? Molestiae atque repellat, pariatur magni quas totam laborum nihil odio quasi, dicta reprehenderit accusamus necessitatibus provident.</div>
+                        </div>
+                        <div class="status">
+                            <div class="time">Чт</div>
+                            <div class="count">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="navigation">
-            <div class="item active">
+            <div class="item">
                 <div class="icon">
                     <svg width="22px" height="22px" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.77832 0.500005L1.73633 0.79395C1.62933 1.54145 1.04195 2.12934 0.293945 2.23634L0 2.27832V2.72266L0.293945 2.76465C1.04145 2.87165 1.62933 3.45806 1.73633 4.20605L1.77832 4.5H2.22265L2.26465 4.20605C2.37165 3.45855 2.95805 2.87067 3.70605 2.76367L4 2.72168V2.27832L3.70605 2.23633C2.95855 2.12933 2.37067 1.54195 2.26367 0.793945L2.22167 0.5L1.77832 0.500005ZM8.5 1.00001L6.5 3.50001C6.5 3.50001 10.5029 3.49988 10.5029 5.98438C10.5154 7.06388 10.5 10.5 10.5 10.5L11.5 11.5C11.5 11.5 12.4912 6.5 12.4912 5C12.4912 1.5 8.5 1.00001 8.5 1.00001ZM25 1.00001C22 1.00001 20.5 2.5 20.5 4.5V5.50879L21.5 5.5C21.486 5.044 22.249 3.50001 26.5 3.50001L25 1.00001ZM17.2773 1.50001L17.2354 1.79395C17.1284 2.54145 16.5419 3.12933 15.7939 3.23634L15.5 3.27833V3.72267L15.7939 3.76466C16.5414 3.87166 17.1293 4.45807 17.2363 5.20607L17.2783 5.50001H17.7227L17.7647 5.20607C17.8717 4.45857 18.4581 3.87069 19.2061 3.76368L19.5 3.72169V3.27833L19.2061 3.23634C18.4586 3.12933 17.8707 2.54195 17.7637 1.79395L17.7217 1.50001H17.2773ZM24 4.5L23 5C23.014 5.456 22.8765 6.5 20 6.5C17.1235 6.5 16 8.5 16 10V11.5L17 10.5C17 9.5 18 9.00879 20 9.00879C22.818 9.00879 24 6.991 24 6V4.5ZM4.27735 6L4.23535 6.29395C4.12835 7.04145 3.54194 7.62933 2.79394 7.73633L2.5 7.77833V8.22266L2.79394 8.26465C3.54144 8.37165 4.12933 8.95805 4.23633 9.70605L4.27833 10H4.72266L4.76466 9.70605C4.87165 8.95855 5.45806 8.37068 6.20606 8.26367L6.5 8.22168V7.77832L6.20606 7.73633C5.45856 7.62933 4.87068 7.04195 4.76368 6.29394L4.72168 6L4.27735 6ZM24.2773 9.5L24.2354 9.79395C24.1284 10.5415 23.5419 11.1293 22.7939 11.2363L22.5 11.2783V11.7227L22.7939 11.7646C23.5414 11.8716 24.1293 12.4581 24.2363 13.2061L24.2783 13.5H24.7227L24.7647 13.2061C24.8717 12.4586 25.4581 11.8707 26.2061 11.7637L26.5 11.7217V11.2783L26.2061 11.2363C25.4586 11.1293 24.8707 10.5419 24.7637 9.79394L24.7217 9.5L24.2773 9.5ZM7.52149 10L2 25L3 26L18 20.4785L7.52149 10ZM19.5 10L18.5 10.5C18.5 11.991 18 12.5 12.5 12.5L14.5 14.5088C18.788 14.5088 19.5 12.491 19.5 11.5V10ZM24 15.5088C22.5 15.5088 16.5 16.5 16.5 16.5L17.5 17.5C17.5 17.5 21.9361 17.4846 23.0156 17.4971C25.5001 17.4971 25.5 21.5 25.5 21.5L28 19.5C28 19.5 27.5 15.5088 24 15.5088ZM20.167 20.5L20.0098 21.6035C19.9058 22.332 19.3325 22.9048 18.6035 23.0088L17.5 23.166V23.833L18.6035 23.9902C19.332 24.0942 19.9048 24.6675 20.0088 25.3965L20.166 26.5H20.833L20.9902 25.3965C21.0942 24.668 21.6675 24.0952 22.3965 23.9912L23.5 23.834V23.166L22.3965 23.0088C21.668 22.9048 21.0952 22.3325 20.9912 21.6035L20.834 20.5L20.167 20.5Z" fill="currentColor"></path>
@@ -26,7 +109,7 @@
                 </div>
                 <div class="label">События</div>
             </div>
-            <div class="item">
+            <div class="item active">
                 <div class="icon">
                     <svg width="20px" height="20px" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.9907 0C8.19213 0.006845 3.78693 2.65286 1.52948 6.8843C-0.727968 11.1157 -0.471065 16.2454 2.19788 20.2305L0.982166 26L7.28353 24.6738C9.06026 25.5438 11.0122 25.9974 12.9907 26C20.1755 26 26 20.1797 26 13C26 5.8203 20.1756 0 12.9907 0Z" fill="currentColor"></path>
@@ -45,12 +128,16 @@
             <div class="item">
                 <div class="icon">
                     <img src="../../imgs/img1.png" alt="" class="img">
+                    <div class="status">
+                        <svg width="9px" height="9px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5229 4.47715 20 10 20C15.5229 20 20 15.5229 20 10C20 4.47715 15.5229 0 10 0Z" fill="#1FB141"></path>
+                        </svg>                                                                                                                                          
+                    </div>
                 </div>
                 <div class="label">Профиль</div>
             </div>
         </div>
     </div>
-
     <script src="../../js/navigation.js"></script>
 </body>
 </html>

@@ -1,0 +1,154 @@
+$padding: 18px;
+
+#layouts {
+    #chats-layout {
+        .up-bar {
+            width: 100%;
+            box-sizing: border-box;
+
+            padding: 15px $padding;
+            margin-top: 10px;
+
+            user-select: none;
+
+            .title {
+                font-family: "Roboto", sans-serif;
+                font-size: 18px; font-weight: 500;
+                user-select: none;
+
+                color: #070507;
+            }
+
+            .search {
+                width: 100%; height: 40px;
+                margin-top: 15px;
+
+                border-radius: 30px;
+                background-color: #ecebec;
+
+                display: flex;
+                align-items: center;
+
+                box-sizing: border-box;
+                padding: 0px 12px;
+
+                color: #807f82;
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    margin-right: 3px;
+                }
+
+                .label {
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        #chats-list {
+            width: 100%;
+            overflow-x: hidden;
+
+            padding-bottom: 30px;
+
+            .item {
+                width: 100%;
+                height: 62px;
+                box-sizing: border-box;
+
+                padding: 8px $padding;
+                overflow: hidden;
+
+                display: flex;
+                align-items: center;
+
+                .avatar {
+                    width: 45px; height: 45px;
+                    position: relative;
+
+                    .status {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        top: 30px; left: 28px;
+                        width: 18px; height: 18px;
+                        border-radius: 50px;
+                        background-color: #ffffff;
+                    }
+                }
+
+                .avatar > img {
+                    width: 45px; height: 45px;
+                    border-radius: 50px;
+                }
+
+                .labels {
+                    width: calc(100% - 45px - 32px);
+                    box-sizing: border-box;
+                    padding-left: 10px;
+                    padding-right: 5px;
+
+                    .name, .message {
+                        width: 100%;
+
+                        font-family: "Roboto", sans-serif;
+                        font-size: 14px;
+
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+
+                    .name {
+                        color: #070507;
+                        font-weight: 500;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }
+
+                    .message {
+                        color: #807f82;
+                        font-weight: 400;
+                    }
+                }
+
+                .status {
+                    width: 32px;
+                    // height: 37px;
+
+                    position: relative;
+                    top: 1px;
+
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 400;
+                    font-size: 12px;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .time {
+                        height: 10px;
+                    }
+
+                    .count {
+                        margin-top: 7px;
+                        width: 20px;
+                        height: 20px;
+                        box-sizing: border-box;
+                        text-align: center;
+                        padding-top: 4px;
+                        background: #efefef;
+                        font-weight: 500;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
